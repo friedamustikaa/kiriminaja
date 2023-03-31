@@ -1,6 +1,6 @@
 <template>
   <NavSmall />
-  <div class="min-h-screen bg-purple-100 bg-opacity-70">
+  <div class="min-h-screen bg-purple-100">
     <Navbar/>
     <NuxtPage />
     <AppFooter/>

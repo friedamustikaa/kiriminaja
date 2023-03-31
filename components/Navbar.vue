@@ -5,7 +5,7 @@
           <!-- Logo -->
           <div class="xl:col-span-2 grid grid-cols-8">
             <div>
-              <a href="#"
+              <NuxtLink to="/"
                 class="router-link-active router-link-exact-active text-center xl:text-left my-3 xl:my-0 xl:py-5 block col-span-4 xl:col-span-8 text-primary-700 dark:text-white">
                 <svg class="inline h-10 mb-3 text-violet-900" viewBox="0 0 582 165" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
                     </linearGradient>
                   </defs>
                 </svg>
-              </a>
+              </NuxtLink>
             </div>
           </div>
   
