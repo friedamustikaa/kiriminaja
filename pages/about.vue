@@ -100,21 +100,21 @@
     <div class="mb-28">
       <p class="text-violet-400 font-semibold mb-2">Our Leaders</p>
       <p class="font-display text-neutral-950 font-bold text-4xl mb-5">We lead with intention</p>
-      <div class="grid grid-cols-2 xl:grid-cols-5 gap-5 xl:gap-7">
-        <div class="group">
-          <Profil />
-        </div>
-        <div class="group">
-          <Profil />
-        </div>
-        <div class="group">
-          <Profil />
-        </div>
-        <div class="group">
-          <Profil />
-        </div>
-        <div class="group">
-          <Profil />
+      <div class="">
+        <div class="grid grid-cols-5 xl:grid-cols-5  xl:gap-3">
+            <div v-for="item in sliders" :key="item.name">
+              <div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg max-h-full">
+                  <img class="w-full" :src="item.image" alt="">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-lg mb-1">{{ item.name }}</div>
+                    <p class="text-gray-700 text-xs">
+                      {{ item.position }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -149,6 +149,18 @@
       </div>
     </section>
 
-    <PromoApps/>
+    <PromoApps />
   </div>
 </template>
+
+<script>
+import data_bod from '../static/data_bod.json'
+
+export default {
+  data() {
+    return {
+      sliders: data_bod
+    }
+  },
+}
+</script>

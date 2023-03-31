@@ -390,48 +390,12 @@
             </div>
             <div>
                 <div class="grid grid-cols-2 xl:grid-cols-6 gap-5 items-center dark:grayscale dark:contrast-50">
-                    <div class="aspect-video relative"><img
-                            src="https://kiriminaja.com/assets/home-v3/logistics/anteraja.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="anteraja"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/jne.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="jne"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/jnt.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="jnt"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/ncs.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="ncs"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/sap.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="sap"></div>
-                    <div class="aspect-video relative"><img
-                            src="https://kiriminaja.com/assets/home-v3/logistics/sicepat.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="sicepat"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/ninja.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="ninja"></div>
-                    <div class="aspect-video relative"><img
-                            src="https://kiriminaja.com/assets/home-v3/logistics/sentral.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="sentral"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/lion.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="lion"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/idx.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="idx"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/gosend.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="gosend"></div>
-                    <div class="aspect-video relative"><img
-                            src="https://kiriminaja.com/assets/home-v3/logistics/grab_express.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="grab_express">
+                    <div v-for="item in sliders" :key="item.name">
+                        <div class="aspect-video relative">
+                            <img :src="item.image" class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11"
+                                alt="expeditions">
+                        </div>
                     </div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/borzo.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="borzo"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/indah.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="Indah Cargo">
-                    </div>
-                    <div class="aspect-video relative"><img
-                            src="https://kiriminaja.com/assets/home-v3/logistics/jtcargo.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="J&T Cargo"></div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/rpx.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="RPX Holdings">
-                    </div>
-                    <div class="aspect-video relative"><img src="https://kiriminaja.com/assets/home-v3/logistics/paxel.png"
-                            class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-11" alt="Paxel"></div>
                 </div>
             </div>
         </div>
@@ -441,8 +405,20 @@
     <section>
         <div class="container xl:w-10/12 2xl:w-9/12 mx-auto xl:px-3">
             <div class="pt-10">
-                <PromoApps/>
+                <PromoApps />
             </div>
         </div>
     </section>
 </template>
+
+<script>
+import data_expeditions from '../static/data_expeditions.json'
+
+export default {
+    data() {
+        return {
+            sliders: data_expeditions
+        }
+    },
+}
+</script>

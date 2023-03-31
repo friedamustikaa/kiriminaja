@@ -1,0 +1,50 @@
+[
+    {
+        "name": "JNE",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/jne.png"
+    },
+    {
+        "name": "J&T",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/jnt.png"
+    },
+    {
+        "name": "Sicepat",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/sicepat.png"
+    },
+    {
+        "name": "SAP",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/sap.png"
+    },
+    {
+        "name": "NCS",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/ncs.png"
+    },
+    {
+        "name": "Sentral Cargo",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/sentral.png"
+    },
+    {
+        "name": "Anteraja",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/anteraja.png"
+    },
+    {
+        "name": "Ninja Express",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/ninja.png"
+    },
+    {
+        "name": "ID Express",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/idx.png"
+    },
+    {
+        "name": "Gosend",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/gosend.png"
+    },
+    {
+        "name": "GrabExpress",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/grab_express.png"
+    },
+    {
+        "name": "Borzo",
+        "image": "https://kiriminaja-static-file.imgix.net/home-v3/logistics/borzo.png"
+    }
+]
